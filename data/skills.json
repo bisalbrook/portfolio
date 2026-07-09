@@ -1,0 +1,43 @@
+[
+  {
+    "category": "Languages",
+    "skills": [
+      { "name": "TypeScript", "level": 92 },
+      { "name": "Python", "level": 88 },
+      { "name": "Go", "level": 74 },
+      { "name": "Java", "level": 70 },
+      { "name": "Kotlin", "level": 78 }
+    ]
+  },
+  {
+    "category": "Frameworks",
+    "skills": [
+      { "name": "React / Next.js", "level": 94 },
+      { "name": "Node.js", "level": 86 },
+      { "name": "Flutter", "level": 82 }
+    ]
+  },
+  {
+    "category": "Infrastructure",
+    "skills": [
+      { "name": "AWS", "level": 84 },
+      { "name": "Docker", "level": 88 },
+      { "name": "Kubernetes", "level": 76 },
+      { "name": "Linux", "level": 90 },
+      { "name": "Networking", "level": 72 }
+    ]
+  },
+  {
+    "category": "Data & AI",
+    "skills": [
+      { "name": "Machine Learning", "level": 70 },
+      { "name": "MongoDB", "level": 80 },
+      { "name": "SQL", "level": 85 },
+      { "name": "Firebase", "level": 79 }
+    ]
+  },
+  {
+    "category": "Security",
+    "skills": [{ "name": "Cybersecurity", "level": 68 }]
+  }
+]

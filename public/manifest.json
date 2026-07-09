@@ -1,0 +1,12 @@
+{
+  "name": "Developer Portfolio",
+  "short_name": "Portfolio",
+  "description": "An OS-inspired interactive developer portfolio.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0E14",
+  "theme_color": "#0B0E14",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

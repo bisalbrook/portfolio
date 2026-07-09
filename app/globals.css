@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root,
+.dark {
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --base: #0b0e14;
+  --base-panel: #10141d;
+  --base-raised: #161b26;
+  --ink: #e7eaf0;
+  --ink-muted: #8b93a7;
+  --ink-faint: #57607a;
+  --border: rgba(231, 234, 240, 0.08);
+  --border-strong: rgba(231, 234, 240, 0.16);
+}
+
+.light {
+  --base: #f4f5f7;
+  --base-panel: #ffffff;
+  --base-raised: #ffffff;
+  --ink: #12151c;
+  --ink-muted: #4b5266;
+  --ink-faint: #8b93a7;
+  --border: rgba(18, 21, 28, 0.08);
+  --border-strong: rgba(18, 21, 28, 0.16);
+}
+
+.light body {
+  background-image: linear-gradient(
+      rgba(18, 21, 28, 0.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(18, 21, 28, 0.035) 1px, transparent 1px);
+}
+
+* {
+  border-color: theme("colors.border.DEFAULT");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-base text-ink font-body antialiased;
+  background-image: theme("backgroundImage.grid-faint");
+  background-size: theme("backgroundSize.grid");
+}
+
+::selection {
+  background: rgba(94, 234, 212, 0.3);
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(231, 234, 240, 0.15);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(231, 234, 240, 0.25);
+}
+
+/* Glassmorphism panel — the signature surface used across every "app window" */
+.glass {
+  background: linear-gradient(
+    180deg,
+    rgba(22, 27, 38, 0.72),
+    rgba(16, 20, 29, 0.6)
+  );
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid theme("colors.border.DEFAULT");
+}
+
+.glass-strong {
+  background: linear-gradient(
+    180deg,
+    rgba(22, 27, 38, 0.88),
+    rgba(16, 20, 29, 0.82)
+  );
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid theme("colors.border.strong");
+}
+
+.light .glass {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.65));
+}
+
+.light .glass-strong {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.88));
+}
+
+.window-titlebar {
+  @apply flex items-center gap-1.5 px-4 py-2.5 border-b border-border;
+}
+
+.traffic-light {
+  @apply h-2.5 w-2.5 rounded-full;
+}
+
+/* Keyboard focus visibility, kept deliberately obvious for a11y */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid theme("colors.signal.teal");
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.mono-tag {
+  @apply font-mono text-[11px] uppercase tracking-wider text-ink-muted;
+}

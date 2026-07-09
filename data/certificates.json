@@ -1,0 +1,38 @@
+[
+  {
+    "id": "aws-saa",
+    "title": "AWS Certified Solutions Architect – Associate",
+    "provider": "Amazon Web Services",
+    "date": "2025-09",
+    "credentialId": "AWS-SAA-0001",
+    "verifyUrl": "https://www.credly.com/",
+    "image": "https://picsum.photos/seed/seed1/800/480"
+  },
+  {
+    "id": "ckad",
+    "title": "Certified Kubernetes Application Developer",
+    "provider": "The Linux Foundation",
+    "date": "2025-06",
+    "credentialId": "CKAD-0002",
+    "verifyUrl": "https://training.linuxfoundation.org/certification/verify/",
+    "image": "https://picsum.photos/seed/seed2/800/480"
+  },
+  {
+    "id": "gcp-ace",
+    "title": "Google Cloud Associate Cloud Engineer",
+    "provider": "Google Cloud",
+    "date": "2025-02",
+    "credentialId": "GCP-ACE-0003",
+    "verifyUrl": "https://www.credential.net/",
+    "image": "https://picsum.photos/seed/seed3/800/480"
+  },
+  {
+    "id": "comptia-sec",
+    "title": "CompTIA Security+",
+    "provider": "CompTIA",
+    "date": "2024-10",
+    "credentialId": "SEC-0004",
+    "verifyUrl": "https://www.certmetrics.com/comptia/",
+    "image": "https://picsum.photos/seed/seed4/800/480"
+  }
+]

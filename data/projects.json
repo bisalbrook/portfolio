@@ -1,0 +1,154 @@
+[
+  {
+    "slug": "ai-vpn",
+    "title": "AI VPN",
+    "description": "A self-optimizing VPN that routes traffic through the lowest-latency hop using a lightweight ML model.",
+    "longDescription": "AI VPN continuously benchmarks candidate exit nodes and predicts the fastest route for the current network conditions, instead of relying on static server lists. A small regression model retrains on-device every few hours using anonymized latency samples.",
+    "image": "https://picsum.photos/seed/seed6/1200/720",
+    "gallery": [
+      "https://picsum.photos/seed/seed6/1200/720",
+      "https://picsum.photos/seed/seed6/1200/720"
+    ],
+    "technologies": ["Python", "WireGuard", "Go", "Docker", "AWS"],
+    "github": "https://github.com/yourusername/ai-vpn",
+    "demo": "",
+    "duration": "4 months",
+    "difficulty": "Advanced",
+    "category": "AI",
+    "status": "In Progress",
+    "featured": true,
+    "trending": true,
+    "stars": 214,
+    "architecture": "Client agent (Go) benchmarks nodes over WireGuard tunnels, streams metrics to a Python scoring service, which returns a ranked route table consumed by the client every 15 minutes.",
+    "lessonsLearned": [
+      "Retraining cadence matters more than model complexity for this problem",
+      "WireGuard's userspace implementation made cross-platform benchmarking far simpler"
+    ],
+    "publishedAt": "2026-02-01"
+  },
+  {
+    "slug": "flowstack",
+    "title": "FlowStack",
+    "description": "A drag-and-drop workflow builder for automating everyday developer tasks, built with Next.js.",
+    "longDescription": "FlowStack lets teams chain together triggers and actions (webhooks, cron jobs, Slack messages, database writes) on a visual canvas, then compiles the graph into a serverless execution plan.",
+    "image": "https://picsum.photos/seed/seed7/1200/720",
+    "gallery": [
+      "https://picsum.photos/seed/seed7/1200/720"
+    ],
+    "technologies": ["Next.js", "TypeScript", "PostgreSQL", "Redis"],
+    "github": "https://github.com/yourusername/flowstack",
+    "demo": "https://flowstack.example.com",
+    "duration": "3 months",
+    "difficulty": "Intermediate",
+    "category": "Web",
+    "status": "Live",
+    "featured": true,
+    "trending": true,
+    "stars": 342,
+    "architecture": "Canvas graph is serialized to a DAG, validated server-side, then compiled into queued jobs processed by a worker pool with Redis-backed retries.",
+    "lessonsLearned": [
+      "Optimistic UI on the canvas needed a proper conflict-resolution strategy once autosave shipped"
+    ],
+    "publishedAt": "2025-11-14"
+  },
+  {
+    "slug": "pocket-ledger",
+    "title": "Pocket Ledger",
+    "description": "An offline-first personal finance tracker for Android with on-device categorization.",
+    "longDescription": "Pocket Ledger works entirely offline, syncing only when the user opts in. Transaction categorization runs on-device with a small classifier so no financial data ever leaves the phone by default.",
+    "image": "https://picsum.photos/seed/seed8/1200/720",
+    "gallery": [
+      "https://picsum.photos/seed/seed8/1200/720"
+    ],
+    "technologies": ["Kotlin", "Jetpack Compose", "Room", "TensorFlow Lite"],
+    "github": "https://github.com/yourusername/pocket-ledger",
+    "demo": "",
+    "duration": "2 months",
+    "difficulty": "Intermediate",
+    "category": "Android",
+    "status": "Live",
+    "featured": false,
+    "trending": false,
+    "stars": 98,
+    "architecture": "Room database with an on-device TFLite classifier for auto-categorization, optional end-to-end encrypted sync layer built on top of a REST API.",
+    "lessonsLearned": [
+      "Shipping a quantized model under 2MB required trimming the feature set aggressively"
+    ],
+    "publishedAt": "2025-08-22"
+  },
+  {
+    "slug": "cluster-atlas",
+    "title": "Cluster Atlas",
+    "description": "A visual Kubernetes cost and health dashboard for small teams without a dedicated SRE.",
+    "longDescription": "Cluster Atlas connects to a cluster's metrics API and renders cost attribution per namespace alongside health signals, aimed at teams too small to run a full observability stack.",
+    "image": "https://picsum.photos/seed/seed2/1200/720",
+    "gallery": [
+      "https://picsum.photos/seed/seed2/1200/720"
+    ],
+    "technologies": ["Go", "Kubernetes", "Prometheus", "React"],
+    "github": "https://github.com/yourusername/cluster-atlas",
+    "demo": "",
+    "duration": "5 months",
+    "difficulty": "Advanced",
+    "category": "Cloud",
+    "status": "Live",
+    "featured": false,
+    "trending": true,
+    "stars": 156,
+    "architecture": "Read-only controller queries the metrics-server and cloud billing API, aggregates by namespace/label, and serves a websocket feed to the dashboard.",
+    "lessonsLearned": [
+      "Cost attribution accuracy depends heavily on consistent labeling discipline across teams"
+    ],
+    "publishedAt": "2025-05-30"
+  },
+  {
+    "slug": "shield-scan",
+    "title": "ShieldScan",
+    "description": "A lightweight CLI that scans Dockerfiles and IaC configs for common misconfigurations.",
+    "longDescription": "ShieldScan runs a rule-based static analysis pass over Dockerfiles, Terraform, and Kubernetes manifests, flagging common misconfigurations before they reach production.",
+    "image": "https://picsum.photos/seed/seed9/1200/720",
+    "gallery": [
+      "https://picsum.photos/seed/seed9/1200/720"
+    ],
+    "technologies": ["Go", "Docker", "Terraform"],
+    "github": "https://github.com/yourusername/shield-scan",
+    "demo": "",
+    "duration": "6 weeks",
+    "difficulty": "Intermediate",
+    "category": "Cybersecurity",
+    "status": "Live",
+    "featured": false,
+    "trending": false,
+    "stars": 77,
+    "architecture": "Rule engine parses config ASTs and matches against a versioned rule set, with results exported as SARIF for CI integration.",
+    "lessonsLearned": [
+      "SARIF output made GitHub code-scanning integration nearly free"
+    ],
+    "publishedAt": "2025-03-10"
+  },
+  {
+    "slug": "flutter-formkit",
+    "title": "Flutter FormKit",
+    "description": "An open-source Flutter package for building validated, animated multi-step forms fast.",
+    "longDescription": "FlutterFormKit provides a declarative API for multi-step forms with built-in validation, progress indicators, and page transitions, published on pub.dev.",
+    "image": "https://picsum.photos/seed/seed10/1200/720",
+    "gallery": [
+      "https://picsum.photos/seed/seed10/1200/720"
+    ],
+    "technologies": ["Flutter", "Dart"],
+    "github": "https://github.com/yourusername/flutter-formkit",
+    "demo": "",
+    "duration": "1 month",
+    "difficulty": "Beginner",
+    "category": "Android",
+    "status": "Live",
+    "featured": false,
+    "trending": false,
+    "stars": 189,
+    "architecture": "Widget tree exposes a FormController via InheritedWidget, letting steps stay decoupled from the surrounding navigation.",
+    "lessonsLearned": [
+      "Good pub.dev documentation drove more adoption than any feature did"
+    ],
+    "publishedAt": "2024-12-05"
+  }
+]

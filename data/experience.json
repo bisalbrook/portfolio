@@ -1,0 +1,20 @@
+[
+  {
+    "role": "Software Engineer",
+    "company": "Nimbus Systems",
+    "period": "2024 — Present",
+    "description": "Own the backend platform for a B2B SaaS product, focusing on reliability and cost efficiency across a multi-region Kubernetes deployment."
+  },
+  {
+    "role": "Backend Developer Intern",
+    "company": "Kestrel Labs",
+    "period": "2023 — 2024",
+    "description": "Built internal tooling for automated deployment pipelines and contributed to the company's first public API."
+  },
+  {
+    "role": "Freelance Developer",
+    "company": "Self-employed",
+    "period": "2021 — 2023",
+    "description": "Delivered Android apps and internal dashboards for small businesses, handling everything from scoping to deployment."
+  }
+]

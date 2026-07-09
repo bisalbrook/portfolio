@@ -1,0 +1,37 @@
+[
+  {
+    "id": "t1",
+    "date": "2018-06",
+    "title": "Started learning programming",
+    "description": "Picked up Python during a summer break out of curiosity about how apps actually worked, and never really stopped.",
+    "kind": "milestone"
+  },
+  {
+    "id": "t2",
+    "date": "2019-09",
+    "title": "Built first app",
+    "description": "Shipped a small Android to-do app to the Play Store — rough around the edges, but the first time code I wrote ran on someone else's phone.",
+    "kind": "project"
+  },
+  {
+    "id": "t3",
+    "date": "2022-04",
+    "title": "First open-source contributions",
+    "description": "Started contributing fixes and small features to libraries I used daily, which taught me more about production code than any course did.",
+    "kind": "opensource"
+  },
+  {
+    "id": "t4",
+    "date": "2025-09",
+    "title": "AWS Certification",
+    "description": "Earned AWS Certified Solutions Architect – Associate after a few months of hands-on lab work.",
+    "kind": "certification"
+  },
+  {
+    "id": "t5",
+    "date": "2026-02",
+    "title": "Created AI VPN",
+    "description": "Built a self-optimizing VPN routing engine as a deep dive into applying lightweight ML to a real infrastructure problem.",
+    "kind": "project"
+  }
+]

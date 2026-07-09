@@ -1,0 +1,50 @@
+[
+  {
+    "name": "flowstack",
+    "description": "Drag-and-drop workflow automation, compiled to a serverless execution plan.",
+    "language": "TypeScript",
+    "stars": 342,
+    "forks": 41,
+    "url": "https://github.com/yourusername/flowstack"
+  },
+  {
+    "name": "ai-vpn",
+    "description": "Self-optimizing VPN that routes traffic through the lowest-latency hop.",
+    "language": "Go",
+    "stars": 214,
+    "forks": 28,
+    "url": "https://github.com/yourusername/ai-vpn"
+  },
+  {
+    "name": "flutter-formkit",
+    "description": "Declarative multi-step forms for Flutter with built-in validation.",
+    "language": "Dart",
+    "stars": 189,
+    "forks": 23,
+    "url": "https://github.com/yourusername/flutter-formkit"
+  },
+  {
+    "name": "cluster-atlas",
+    "description": "Visual Kubernetes cost and health dashboard for small teams.",
+    "language": "Go",
+    "stars": 156,
+    "forks": 19,
+    "url": "https://github.com/yourusername/cluster-atlas"
+  },
+  {
+    "name": "pocket-ledger",
+    "description": "Offline-first personal finance tracker with on-device categorization.",
+    "language": "Kotlin",
+    "stars": 98,
+    "forks": 11,
+    "url": "https://github.com/yourusername/pocket-ledger"
+  },
+  {
+    "name": "shield-scan",
+    "description": "CLI that scans Dockerfiles and IaC configs for misconfigurations.",
+    "language": "Go",
+    "stars": 77,
+    "forks": 9,
+    "url": "https://github.com/yourusername/shield-scan"
+  }
+]
